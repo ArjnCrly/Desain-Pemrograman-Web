@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styleAnimate.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                var div = $(".box");
+                div.animate({width: "300px"});
+                div.animate({height: "300px"});
+                div.animate({marginLeft: "150px"});
+                div.animate({borderWidth: "10px"});
+                div.animate({opacity: 0.5});
+            });
+        });
+    </script>
+</head>
+<body>
+    <button type="button">Start Animation</button>
+    <div class="box"></div>
+</body>
+</html>
