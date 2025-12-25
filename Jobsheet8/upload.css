@@ -1,0 +1,61 @@
+/* Kontainer utama form */
+.upload-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Pengaturan judul */
+h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Kontainer untuk input file agar berada di tengah */
+.file-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Menyembunyikan input file asli agar bisa diganti dengan label kustom */
+.file-input {
+    display: none;
+}
+
+/* Gaya untuk label yang berfungsi sebagai tombol pilih file */
+.file-label {
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Gaya umum tombol unggah */
+.upload-button {
+    background: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5; /* Opacity awal agar terlihat memudar/tidak aktif */
+}
+
+/* Gaya khusus saat tombol unggah dalam keadaan disabled */
+.upload-button:disabled {
+    background: #ccc; /* Mengubah warna menjadi abu-abu saat mati */
+    cursor: not-allowed; /* Mengubah bentuk kursor saat dilarang klik */
+}
+
+/* Gaya teks status pesan di bawah form */
+.upload-status {
+    margin-top: 20px;
+    font-weight: bold;
+}
